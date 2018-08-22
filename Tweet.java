@@ -57,34 +57,34 @@ public class Tweet {
   
   // returns the date of the tweet
   public String getDate() {
-    return this.date; 
+    return date; 
   }
   
   // returns the time of the tweet
   public String getTime() {
-    return this.time; 
+    return time; 
   }
   
   // returns the message of the tweet
   public String getMessage() {
-    return this.message; 
+    return message; 
   }
   
   // returns the user account of the tweet
   public String getUserAccount() {
-    return this.userAccount; 
+    return userAccount; 
   }
   
   // a toString method for printing the tweet's information
   public String toString() {
-    String s = this.userAccount + '\t' + this.date + '\t' + this.time + '\t' + this.message;
+    String s = userAccount + '\t' + date + '\t' + time + '\t' + message;
     return s;
   }
   
   // returns true if the tweet the method is called on comes before the input tweet
   public boolean isBefore(Tweet input) {
     // retrieving the dates and times of the two tweets
-    String[] thisDate = this.date.split("-");
+    String[] thisDate = date.split("-");
     int thisYear = Integer.parseInt(thisDate[0]);
     int thisMonth = Integer.parseInt(thisDate[1]);
     int thisDay = Integer.parseInt(thisDate[2]);
@@ -94,7 +94,7 @@ public class Tweet {
     int inputMonth = Integer.parseInt(inputDate[1]);
     int inputDay = Integer.parseInt(inputDate[2]);
     
-    String[] thisTime = this.time.split(":");
+    String[] thisTime = time.split(":");
     int thisHour = Integer.parseInt(thisTime[0]);
     int thisMinute = Integer.parseInt(thisTime[1]);
     int thisSecond = Integer.parseInt(thisTime[2]);
