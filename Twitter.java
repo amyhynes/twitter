@@ -68,7 +68,7 @@ public class Twitter {
   
   // returns the number of tweets in the data base
   public int getSizeTwitter() {
-    return this.tweets.size(); 
+    return tweets.size(); 
   }
   
   // returns the tweet stored at a given index
